@@ -1,5 +1,7 @@
 
-crée le docker-compose.yml dans le dossier projet wiki
+lancer le scripts deploy.sh des dépendance lié au projet ici avec ./deploy.sh : https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Deploy.sh
+
+crée le docker-compose.yml dans le dossier projet wiki script trouable ici : https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Docker-compose.yml
 
 mkdir /ProjetWiki
 
