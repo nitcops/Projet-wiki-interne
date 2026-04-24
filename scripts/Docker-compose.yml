@@ -31,3 +31,10 @@ services:
     volumes:
       - ./db_data:/config
     restart: unless-stopped
+
+
+##### Créer un dossier avec le fichier docker-compose.yml ci-dessus.
+
+    Lancer le terminal dans ce dossier et taper : docker compose up -d.
+
+Résultat : Ton wiki est accessible sur http://localhost:8080. Tu n'as plus qu'à créer quelques pages de "documentation fictive" (ex: "Procédure d'accès au Wi-Fi", "Annuaire du personnel")
