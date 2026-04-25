@@ -5,10 +5,11 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_URL=http://localhost:8080
+      - APP_URL=http://192.168.222.141:8080 ### ici il faut mettre votre ip 
+      - APP_KEY=base64:vP8S6p6pW9S6p6pW9S6p6pW9S6p6pW9S6p6pW9S6p6p=
       - DB_HOST=bookstack_db
-      - DB_USER=bookstack
-      - DB_PASS=password_secret
+      - DB_USER=bookstack 
+      - DB_PASS=password_secret 
       - DB_DATABASE=bookstackapp
     volumes:
       - ./config:/config
