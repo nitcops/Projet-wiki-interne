@@ -9,5 +9,4 @@ sudo apt install -y docker.io docker-compose curl vim
 # On s'assure que Docker démarre bien
 sudo systemctl enable --now docker
 
-# Optionnel : pour ne pas avoir à taper 'sudo' à chaque fois (nécessite de se reconnecter)
-# sudo usermod -aG docker $USER
+
