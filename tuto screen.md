@@ -18,8 +18,14 @@ lancer le scripts deploy.sh des dépendance lié au projet ici avec ./deploy.sh 
 
 crée le docker-compose.yml dans le dossier projet wiki script trouable ici : https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Docker-compose.yml
 
-vim Docker-Compose.yml
+vim docker-compose.yml
 
 <img width="415" height="486" alt="image" src="https://github.com/user-attachments/assets/2e4603f5-f742-4b44-96bf-69e07aa22a6a" />
+
+sudo docker compose up -d
+
+docker ps 
+
+<img width="902" height="473" alt="image" src="https://github.com/user-attachments/assets/e0c0a0da-fb21-4a79-9048-3db3476fba21" />
 
 
