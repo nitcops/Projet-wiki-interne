@@ -28,4 +28,21 @@ docker ps
 
 <img width="902" height="473" alt="image" src="https://github.com/user-attachments/assets/e0c0a0da-fb21-4a79-9048-3db3476fba21" />
 
+vous pouvez désormais vous connecter
+
+E-mail : admin@admin.com
+
+Mot de passe : password
+
+<img width="1163" height="572" alt="image" src="https://github.com/user-attachments/assets/4824d643-7029-45ff-9409-0a931929186b" />
+
+on va crée des pages bookstack 
+
+<img width="683" height="249" alt="image" src="https://github.com/user-attachments/assets/55703500-2ccf-4845-ade5-06ebf62ef253" />
+
+et on va tester la persistance des donnée en détruisant les conteneur et en les regénerant
+
+<img width="1141" height="694" alt="image" src="https://github.com/user-attachments/assets/a8c65885-89df-4dcd-8d51-1f4c42076e65" />
+
+voilà nous avons pu crée dans ce tuto un wiki pour organisé nos fiche technique de maniére efficace
 
