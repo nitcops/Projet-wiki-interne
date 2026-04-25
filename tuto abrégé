@@ -5,3 +5,5 @@ su root
 wget https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/Deploy.sh && chmod +x Deploy.sh && ./Deploy.sh
  
 wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/docker-compose.yml && docker-compose up -d
+
+aller sur une page web et tapé http://VotreIp:8080/
