@@ -1,5 +1,7 @@
-1. su root
+Le projet peut être mise en place en 3 lignes vous n'avez cas sopier coller :
 
-2. wget https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Deploy.sh && ./deploy.sh
+su root
+
+wget https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/Deploy.sh && chmod +x Deploy.sh && ./Deploy.sh
  
-3. wget https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/docker-compose.yml && docker-compose up -d
+wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/docker-compose.yml && docker-compose up -d
