@@ -4,7 +4,7 @@ apt install sudo -y
 sudo apt update && apt upgrade
 
 # Installation de Docker et du plugin Compose
-sudo apt install -y docker.io docker-compose curl
+sudo apt install -y docker.io docker-compose curl vim
 
 # On s'assure que Docker démarre bien
 sudo systemctl enable --now docker
