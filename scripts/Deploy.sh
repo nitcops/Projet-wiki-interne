@@ -1,5 +1,4 @@
 #!/bin/bash
-su root
 apt install sudo -y
 # Mise à jour des paquets
 sudo apt update && apt upgrade
