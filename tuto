@@ -1,0 +1,5 @@
+1. su root
+
+2. wget https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Deploy.sh && ./deploy.sh
+ 
+3. wget https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/docker-compose.yml && docker-compose up -d
