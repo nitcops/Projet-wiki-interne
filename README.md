@@ -16,3 +16,5 @@ Ce projet est extrêment simple car ultra automatisé vous n'avez que 4 chose à
 4. vous connécter à l'interface web de votre nouveaux wiki bookstack pour le création et le gestion de vos documentaiton technique et profité de votre expérience utilisateurs
 
 dans c'est 4 étapes vous avez clé en main en 2-5 min pour avoir un wiki il ne manque que la sécurisation dans le cas d'une utilisation professionel
+
+vous voulez encore plus simple ? voici ma solution clé en main 3 commande bash : https://github.com/nitcops/Projet-wiki-interne/blob/main/tuto
