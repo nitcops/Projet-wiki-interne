@@ -32,7 +32,7 @@ wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki
 
         Identifiants : Modifiez les mots de passe par défaut dans le fichier docker-compose.yml.
 
-        Exposition : Ne laissez pas le port 8080 ouvert sur internet sans protection.
+        Super-Utilisateur : évitez d'utiliser directement le compte root. Privilégiez un utilisateur avec des droits sudo.
 
         HTTPS : Il est fortement recommandé d'ajouter un Reverse Proxy (Nginx) pour gérer le SSL.
 
