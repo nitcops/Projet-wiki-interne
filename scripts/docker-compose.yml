@@ -1,24 +1,26 @@
 services:
+  # Application principale : BookStack (Wiki)
   bookstack:
     image: lscr.io/linuxserver/bookstack
     container_name: bookstack
     environment:
-      - PUID=1000
-      - PGID=1000
-      - APP_URL=http://192.168.222.141:8080
-      - APP_KEY=base64:vP8S6p6pW9S6p6pW9S6p6pW9S6p6pW9S6p6pW9S6p6p=
-      - DB_HOST=bookstack_db
+      - PUID=1000 # Utilisateur Linux propriétaire des fichiers
+      - PGID=1000 # Groupe Linux propriétaire des fichiers
+      - APP_URL=http://192.168.222.141:8080 # URL d'accès (à modifier selon votre IP)
+      - APP_KEY=base64:vP8S6p6pW9S6p6pW9S6p6pW9S6p6pW9S6p6pW9S6p6p= # Clé de chiffrement de l'application
+      - DB_HOST=bookstack_db # Nom du service de base de données (résolution DNS Docker)
       - DB_DATABASE=bookstackapp
-      - DB_USERNAME=bookstack        # <-- Note le NOM : DB_USERNAME au lieu de DB_USER
+      - DB_USERNAME=bookstack
       - DB_PASSWORD=password_secret
     volumes:
-      - ./config:/config
+      - ./config:/config # Persistance des données de configuration et images
     ports:
-      - 8080:80
+      - 8080:80 # Mapping : Port 8080 de l'hôte vers port 80 du conteneur
     restart: unless-stopped
     depends_on:
-      - bookstack_db
+      - bookstack_db # Attendre que la DB soit prête avant de lancer le wiki
 
+  # Base de données MariaDB
   bookstack_db:
     image: lscr.io/linuxserver/mariadb
     container_name: bookstack_db
@@ -30,9 +32,10 @@ services:
       - MYSQL_USER=bookstack
       - MYSQL_PASSWORD=password_secret
     volumes:
-      - ./db_data:/config
+      - ./db_data:/config # Persistance des données SQL
     restart: unless-stopped
 
 
 
 ### Votre wiki est accessible sur http://VotreIp:8080.
+### Pour ce lab, les mots de passe sont en clair. En production, j'utiliserais un fichier .env ou des Docker Secrets.
