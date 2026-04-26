@@ -24,9 +24,11 @@ Identifiants par défaut :
 
     Mot de passe : password
 
+<img width="1249" height="666" alt="image" src="https://github.com/user-attachments/assets/f5830a3f-e857-4216-8aea-6c87772fb823" />
+
 Test de persistance des données
 
-Pour valider la fiabilité de l'infrastructure (Admin Sys style !), vous pouvez tester la persistance des données :
+Pour valider la fiabilité de l'infrastructure, vous pouvez tester la persistance des données :
 
     Supprimez les conteneurs : docker-compose down
 
@@ -34,7 +36,5 @@ Pour valider la fiabilité de l'infrastructure (Admin Sys style !), vous pouvez 
 
     Résultat : Vos articles et configurations sont toujours là grâce aux volumes Docker.
 
-<img width="1249" height="666" alt="image" src="https://github.com/user-attachments/assets/cbdfb62b-755e-41bf-904c-73f66bb9830e" />
-
-
 <img width="1141" height="694" alt="image" src="https://github.com/user-attachments/assets/016b4b3d-6007-46bc-b055-4e51282e2ea5" />
+
