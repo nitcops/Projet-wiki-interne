@@ -1,13 +1,16 @@
 #!/bin/bash
-# Paquet élévation de privilège
+
+# Installation de sudo pour la gestion des privilèges
 apt install sudo -y
-# Mise à jour des paquets
+
+# Mise à jour du système
 sudo apt update && sudo apt upgrade -y
 
-# Installation de Docker et du plugin Compose + paquet de test et d'édition
-sudo apt install -y docker.io docker-compose curl vim
+# Installation de la stack Docker et des outils d'édition
+sudo apt install -y docker.io docker-compose curl     # On installe docker et compose et curl
+sudo apt install -y vim                               # Editeur de texte pour la config
 
-# On s'assure que Docker démarre bien
+# Activation du service Docker au démarrage du système
 sudo systemctl enable --now docker
 
 
