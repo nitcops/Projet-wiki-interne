@@ -42,4 +42,4 @@ http://VotreIp:8080
 
 💡 Pourquoi ce projet ?
 
-Dans un rôle d'Admin Sys, la documentation est le nerf de la guerre. Automatiser le déploiement d'un Wiki permet de garantir que l'équipe dispose immédiatement d'un outil pour consigner les procédures d'exploitation, réduisant ainsi la perte de connaissances techniques.
+Automatiser le déploiement d'un Wiki permet de garantir que l'équipe dispose immédiatement d'un outil pour consigner les procédures d'exploitation, réduisant ainsi la perte de connaissances techniques.
