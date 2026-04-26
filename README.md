@@ -25,6 +25,8 @@ wget https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/
 # 2. Lancement de l'infrastructure
 wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/docker-compose.yml && docker-compose up -d
 
+http://VotreIp:8080
+
 🛡️ Sécurité & Production
 
     [!IMPORTANT]
