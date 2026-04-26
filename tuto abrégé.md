@@ -18,6 +18,8 @@ Accès au service
 
 Une fois le déploiement terminé, ouvrez votre navigateur et rendez-vous sur : http://votre_ip:8080
 
+<img width="804" height="87" alt="image" src="https://github.com/user-attachments/assets/c166212c-34ca-4dea-8723-08a3dc62cc54" />
+
 Identifiants par défaut :
 
     E-mail : admin@admin.com
