@@ -1,20 +1,43 @@
 # Projet-wiki-interne
 
-Projet : Infrastructure de gestion de la connaissance (Wiki d'entreprise)
+📘 Projet : Déploiement automatisé Wiki (BookStack)
 
-    Déploiement d'une solution de documentation centralisée (BookStack) via Docker Compose.
+Ce projet permet de déployer une solution de documentation centralisée BookStack via une architecture conteneurisée. L'objectif est d'offrir une solution clé en main pour le partage de procédures en entreprise.
 
-    Configuration d'une base de données relationnelle (MariaDB) avec persistance des données.
+🛠️ Architecture Technique
 
-    Mise en place d'une architecture conteneurisée pour faciliter la maintenance et la portabilité.
+    OS : Debian
 
-Ce projet est extrêment simple car ultra automatisé vous n'avez que 4 chose à faire 
+    Conteneurisation : Docker & Docker-Compose
 
-1. passer root ou donnée les permission sudoers à votre users
-2. executé le script deploy.sh : https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Deploy.sh
-3. executé le docker-compose.yml : https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Docker-compose.yml
-4. vous connécter à l'interface web de votre nouveaux wiki bookstack pour le création et le gestion de vos documentaiton technique et profité de votre expérience utilisateurs
+    Base de données : MariaDB (avec persistance des données via volumes)
 
-dans c'est 4 étapes vous avez clé en main en 2-5 min pour avoir un wiki il ne manque que la sécurisation dans le cas d'une utilisation professionel
+    Automatisation : Script Bash personnalisé pour l'installation des dépendances.
 
-vous voulez encore plus simple ? voici ma solution clé en main 3 commande bash : https://github.com/nitcops/Projet-wiki-interne/blob/main/tuto
+🚀 Déploiement Rapide (Quick Start)
+
+Le projet est entièrement automatisé. Pour déployer l'instance en moins de 5 minutes, exécutez les commandes suivantes en tant que root :
+Bash
+
+# 1. Installation des dépendances (Docker, etc.)
+wget https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/Deploy.sh && chmod +x Deploy.sh && ./Deploy.sh
+
+# 2. Lancement de l'infrastructure
+wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/docker-compose.yml && docker-compose up -d
+
+🛡️ Sécurité & Production
+
+    [!IMPORTANT]
+    Ce déploiement est une base de travail. Pour une mise en production réelle :
+
+        Identifiants : Modifiez les mots de passe par défaut dans le fichier docker-compose.yml.
+
+        Exposition : Ne laissez pas le port 8080 ouvert sur internet sans protection.
+
+        HTTPS : Il est fortement recommandé d'ajouter un Reverse Proxy (Nginx) pour gérer le SSL.
+
+        Lien vers mon projet de Load Balancing/Nginx : LoadBalancingNginx-DockerWeb
+
+💡 Pourquoi ce projet ?
+
+Dans un rôle d'Admin Sys, la documentation est le nerf de la guerre. Automatiser le déploiement d'un Wiki permet de garantir que l'équipe dispose immédiatement d'un outil pour consigner les procédures d'exploitation, réduisant ainsi la perte de connaissances techniques.
