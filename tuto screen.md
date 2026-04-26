@@ -10,7 +10,17 @@ crée un script deploy.sh avec vim deploy.sh
 
 <img width="394" height="26" alt="image" src="https://github.com/user-attachments/assets/3243460d-6c9f-40fb-9142-31f8a92f10fe" />
 
-<img width="898" height="279" alt="image" src="https://github.com/user-attachments/assets/0e3ce77d-42d8-4cc0-9648-2fc711a6770b" />
+#!/bin/bash
+# Paquet élévation de privilège
+apt install sudo -y
+# Mise à jour des paquets
+sudo apt update && sudo apt upgrade -y
+
+# Installation de Docker et du plugin Compose + paquet de test et d'édition
+sudo apt install -y docker.io docker-compose curl vim
+
+# On s'assure que Docker démarre bien
+sudo systemctl enable --now docker
 
 lancer le scripts deploy.sh des dépendance lié au projet ici avec ./deploy.sh : https://github.com/nitcops/Projet-wiki-interne/blob/main/scripts/Deploy.sh
 
