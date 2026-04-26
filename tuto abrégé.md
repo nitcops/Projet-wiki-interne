@@ -16,7 +16,7 @@ wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki
 
 Accès au service
 
-Une fois le déploiement terminé, ouvrez votre navigateur et rendez-vous sur : http://votre_ip:8080
+Une fois le déploiement terminé, ouvrez votre navigateur et rendez-vous sur : http://votre_ip:8080 donc pour moi http://192.168.222.141:8080 ip trouvable sur votre debian avec ip -br a
 
 <img width="804" height="87" alt="image" src="https://github.com/user-attachments/assets/c166212c-34ca-4dea-8723-08a3dc62cc54" />
 
