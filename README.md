@@ -20,7 +20,7 @@ Le projet est entièrement automatisé. Pour déployer l'instance en moins de 5 
 Bash
 
 # 1. Installation des dépendances (Docker, etc.)
-wget https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/Deploy.sh && chmod +x Deploy.sh && ./Deploy.sh
+wget https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/Deploy.sh && chmod +x Deploy.sh && ./Deploy.bash
 
 # 2. Lancement de l'infrastructure
 wget -O docker-compose.yml https://raw.githubusercontent.com/nitcops/Projet-wiki-interne/main/scripts/docker-compose.yml && docker-compose up -d
